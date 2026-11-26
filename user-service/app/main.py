@@ -124,7 +124,7 @@ def create_app(
             database.close()
 
     app = FastAPI(
-        title="Friend on Campus User Service",
+        title="CampusRun User Service",
         version="1.0.0",
         lifespan=lifespan,
     )

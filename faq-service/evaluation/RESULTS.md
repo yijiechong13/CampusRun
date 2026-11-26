@@ -6,7 +6,7 @@ questions:
 
 - 85 supported questions covering all 65 FAQ entries: 71 clearly worded and 14
   vague ones (marked `"kind": "vague"`, e.g. "cancel", "balance", "stuck pending").
-- 15 unrelated questions, including NUS questions that look close to FoC topics
+- 15 unrelated questions, including NUS questions that look close to CampusRun topics
   (NUSNET password, hostel applications) and a prompt-injection attempt.
 
 ## Retrieval depth (top-k)
@@ -60,13 +60,13 @@ questions), so it is a stress test rather than a picture of typical traffic.
 The first run exposed two prompt issues:
 
 - **Meta-references:** one answer described its own knowledge ("The information I
-  have covers creating a FoC account") instead of stating the information.
+  have covers creating a CampusRun account") instead of stating the information.
 - **Out-of-scope leakage:** the two unrelated NUS questions that passed the
-  threshold received a refusal followed by unrelated FoC account-creation steps,
+  threshold received a refusal followed by unrelated CampusRun account-creation steps,
   with a citation.
 
 The system prompt in `app/support.py` now requires Claude to first classify
-whether the question concerns FoC and, if not, to cite no sources, so the fixed
+whether the question concerns CampusRun and, if not, to cite no sources, so the fixed
 fallback is returned. It also explicitly forbids meta-references. Results after
 the change:
 
@@ -74,7 +74,7 @@ the change:
 |---|---|---|---|
 | In-scope, relevant entry retrieved | 8 | Grounded answer with citations | Yes |
 | Out-of-scope | 4 | Fixed fallback (abstained) | Yes |
-| Assistant identity ("who are u") | 1 | Fixed fallback, which describes FoC Help | Acceptable |
+| Assistant identity ("who are u") | 1 | Fixed fallback, which describes CampusRun Help | Acceptable |
 | In-scope, relevant entry below threshold | 7 | Fixed fallback (abstained) | No (false negative) |
 | Meta-references in any answer | 0 / 20 | | Yes |
 

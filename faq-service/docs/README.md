@@ -6,7 +6,7 @@ indexed. See [service setup](../README.md) for startup and index refresh command
 
 | File                 | Covers                                                              |
 | -------------------- | ------------------------------------------------------------------- |
-| `getting-started.md` | What FoC is, registering, logging in, requester vs courier mode     |
+| `getting-started.md` | What CampusRun is, registering, logging in, requester vs courier mode     |
 | `credits.md`         | Starting credits, reserve / transfer / release, balance and history |
 | `requesting.md`      | Creating, tracking, cancelling and confirming errand requests       |
 | `couriers.md`        | Finding, accepting and completing errands                           |

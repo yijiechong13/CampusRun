@@ -17,15 +17,15 @@ cannot access these details through orders.
 
 ## What does my account status mean?
 
-An active account can use FoC normally. Admins can suspend or disable an
-account. Both have the same effect: you cannot log in or use FoC, and logging in
+An active account can use CampusRun normally. Admins can suspend or disable an
+account. Both have the same effect: you cannot log in or use CampusRun, and logging in
 shows "This account has been suspended." or "This account has been disabled."
 If it happens while you are logged in, you are returned to the login screen
 within 15 minutes.
 
 ## I think my account was suspended by mistake. What should I do?
 
-FoC does not yet have an in-app way to contact an admin or appeal a
+CampusRun does not yet have an in-app way to contact an admin or appeal a
 suspension. Admins can reinstate an account by changing its status back to
 active. An account review and reinstatement process is planned as future work.
 
@@ -40,8 +40,8 @@ user's profile, status or role is recorded in an audit log.
 ## How do I become an admin?
 
 An existing admin must promote your account. The very first admin is set up
-once by the team that runs FoC.
+once by the team that runs CampusRun.
 
 ## Can I delete my account?
 
-No. FoC does not support deleting accounts.
+No. CampusRun does not support deleting accounts.

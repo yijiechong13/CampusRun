@@ -68,7 +68,7 @@ def test_jwt_keys_can_be_loaded_from_files(
 
     app = create_app(f"sqlite:///{tmp_path / 'users.db'}")
 
-    assert app.title == "Friend on Campus User Service"
+    assert app.title == "CampusRun User Service"
 
 
 def test_cors_origins_are_required(tmp_path, monkeypatch):

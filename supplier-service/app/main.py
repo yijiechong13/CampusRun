@@ -72,7 +72,7 @@ def create_app() -> FastAPI:
         finally:
             engine.dispose()
 
-    app = FastAPI(title="Friend on Campus Supplier Service", lifespan=lifespan,
+    app = FastAPI(title="CampusRun Supplier Service", lifespan=lifespan,
                   dependencies=[Depends(current_user)])
 
     @app.get("/api/v1/places", response_model=list[PlaceResponse])

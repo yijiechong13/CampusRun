@@ -75,8 +75,8 @@ function getStoredAccessToken() {
 function PublicHeader() {
   return (
     <header className="landing-header">
-      <span className="landing-brand">Friend on Campus</span>
-      <span className="landing-brand-mark">FoC</span>
+      <span className="landing-brand">CampusRun</span>
+      <span className="landing-brand-mark">CR</span>
     </header>
   );
 }
@@ -312,7 +312,7 @@ function AuthScreen({ registration }) {
           <p className="auth-help">
             {registration
               ? "Create an account with your NUS email."
-              : "Sign in to Friend on Campus."}
+              : "Sign in to CampusRun."}
           </p>
           {sessionExpired && !actionError && (
             <div className="action-error" role="status">{SESSION_EXPIRED_MESSAGE}</div>

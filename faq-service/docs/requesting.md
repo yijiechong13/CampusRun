@@ -45,12 +45,12 @@ outside the lift lobby". Use "Delivery Instructions" for anything extra, such as
 
 ## Why does my request say "Credit processing is pending"?
 
-FoC is reserving the reward credit for your request. This usually takes about a
+CampusRun is reserving the reward credit for your request. This usually takes about a
 second, after which the request becomes open to couriers. If it stays pending
-longer, credit processing is temporarily delayed; FoC retries automatically and
+longer, credit processing is temporarily delayed; CampusRun retries automatically and
 updates the request on its own, so you don't need to submit it again.
 
-If the retries keep failing, FoC stops retrying and the request shows "Credit
+If the retries keep failing, CampusRun stops retrying and the request shows "Credit
 processing needs admin attention". It stays pending until an admin retries the
 credit processing. No credits are lost or charged twice while it waits.
 
@@ -111,7 +111,7 @@ receipt yourself once you have the items.
 Do not click "Confirm Delivery" until you have your items, because confirming
 completes the errand and pays the courier the reward credit. First check your
 delivery location and any delivery instructions you gave, in case the courier
-left the items there. Contact your courier using the preferred contact in My Requests. FoC does not
+left the items there. Contact your courier using the preferred contact in My Requests. CampusRun does not
 currently have a dispute process. Receipt is automatically confirmed at the
 deadline shown, even if you do not confirm it yourself.
 
@@ -124,7 +124,7 @@ No. Requesters can never accept their own requests, even in Courier Mode.
 ## What if I submit the same request twice by accident?
 
 If the same submission is sent twice, for example after a double click or a
-network retry, FoC creates only one request and returns it both times. Separate
+network retry, CampusRun creates only one request and returns it both times. Separate
 requests that you create on purpose are treated as different requests.
 
 ## Can I see who is delivering my request?
@@ -136,7 +136,7 @@ ends.
 
 ## Where is my courier?
 
-FoC does not show your courier's live location. The status under "My Requests"
+CampusRun does not show your courier's live location. The status under "My Requests"
 shows how far along your errand is: "Accepted" means a courier has taken it and
 is heading to the store, "Picked up" means they have collected your items and
 are on the way to you, and "Delivered" means they say the items have arrived.
@@ -147,7 +147,7 @@ The status updates automatically as the courier progresses.
 If your courier is taking a long time and your items still haven't arrived,
 check the status under "My Requests", which updates automatically when the
 courier picks up and delivers your items. Once a courier accepts your request,
-FoC does not set a delivery deadline, and the request can no longer be
+CampusRun does not set a delivery deadline, and the request can no longer be
 cancelled. Use the courier's preferred contact shown under My Requests to reach them.
 
 ## Can I reorder or schedule an errand for later?

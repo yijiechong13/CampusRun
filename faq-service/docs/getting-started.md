@@ -1,23 +1,23 @@
 # Getting started
 
-## What is Friend on Campus (FoC)?
+## What is CampusRun?
 
-Friend on Campus is a peer-to-peer errand platform for NUS students. A student
+CampusRun is a peer-to-peer errand platform for NUS students. A student
 who needs something collected from a campus store or facility posts an errand
 request, and another student picks it up and delivers it. The person who
 delivers earns the credits the requester offered as a reward.
 
-## Who are you, and what can FoC Help do?
+## Who are you, and what can CampusRun Help do?
 
-I'm FoC Help, the assistant in the Help panel. I answer questions about how FoC
+I'm CampusRun Help, the assistant in the Help panel. I answer questions about how CampusRun
 works, such as creating requests, delivering errands, credits and your account,
-using FoC's help articles. I can't see your account, balance or orders, and I
+using CampusRun's help articles. I can't see your account, balance or orders, and I
 can't make changes for you. For help with a specific order, choose it in the
 Help panel or click "Get help" on the order.
 
-## Who can use FoC?
+## Who can use CampusRun?
 
-FoC is for NUS students. You need an NUS student email address in the format
+CampusRun is for NUS students. You need an NUS student email address in the format
 `<nusid>@u.nus.edu` to register.
 
 ## How do I create an account?
@@ -39,14 +39,14 @@ needs fixing.
 ## Why can't I log in?
 
 Login fails when the email is not registered or the password is wrong. For
-security, FoC shows the same "Invalid email or password" message in both cases.
+security, CampusRun shows the same "Invalid email or password" message in both cases.
 Accounts that have been suspended or disabled by an admin also cannot log in,
 and see the same message.
 
 ## How long do I stay logged in?
 
 You stay logged in for up to 7 days on the same browser, as long as you do not
-log out. FoC renews your session in the background, so you do not need to log
+log out. CampusRun renews your session in the background, so you do not need to log
 in again while you use the app. After 7 days, or if an admin suspends or
 disables your account, you are returned to the login screen with the message
 "Your session has expired. Please log in again."
@@ -67,6 +67,6 @@ manage it under "Active Assignment". Switch modes with the "Requester Mode" and
 ## Why can't I create a request or accept an order?
 
 Creating a request requires Requester Mode, and accepting an order requires
-Courier Mode. If you are in the wrong mode, FoC shows an error such as "Switch
+Courier Mode. If you are in the wrong mode, CampusRun shows an error such as "Switch
 to courier mode to accept an order." Switch modes in the navigation bar and try
 again.

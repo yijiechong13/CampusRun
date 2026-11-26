@@ -21,7 +21,7 @@ pickup notes.
 ## Why can't I create a request for a supplier?
 
 You can only create a request for a supplier that is active and currently open.
-If the supplier is closed or has been deactivated, FoC shows "Supplier is
+If the supplier is closed or has been deactivated, CampusRun shows "Supplier is
 inactive or currently closed." Check its opening hours and try again when it is
 open.
 
@@ -32,7 +32,7 @@ Opening hours and operating days are shown on each supplier's card on the
 
 ## How does the courier know where to pick up my items?
 
-When you create a request, FoC saves the supplier's name and full pickup
+When you create a request, CampusRun saves the supplier's name and full pickup
 location, including the building, floor, location description and any pickup
 instructions, with the request. Couriers see this on the order. If the supplier
 changes its details or its location is renamed later, your existing request
@@ -40,7 +40,7 @@ keeps the details from when it was created.
 
 ## Can I request items from somewhere that isn't listed?
 
-No. You can only create requests for suppliers already listed in FoC.
+No. You can only create requests for suppliers already listed in CampusRun.
 Submitting suggestions for new suppliers is not currently supported. Admins
 manage the supplier list.
 

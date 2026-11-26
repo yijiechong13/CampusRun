@@ -174,8 +174,8 @@ export default function FaqSupport() {
         >
           <header className="faq-header">
             <div>
-              <h2 id="faq-support-title">FoC Help</h2>
-              <p>Questions about using Friend on Campus</p>
+              <h2 id="faq-support-title">CampusRun Help</h2>
+              <p>Questions about using CampusRun</p>
             </div>
             <button type="button" className="faq-icon-button" aria-label="Close help" onClick={close}>×</button>
           </header>
@@ -196,7 +196,7 @@ export default function FaqSupport() {
               if (message.role === "order") return orderCard(message);
               return (
                 <article key={message.id} className={`faq-message faq-message-${message.role}`}>
-                  <span className="faq-speaker">{message.role === "user" ? "You" : "FoC Help"}</span>
+                  <span className="faq-speaker">{message.role === "user" ? "You" : "CampusRun Help"}</span>
                   <p>{message.text}</p>
                   {message.sources?.length > 0 && (
                     <details className="faq-sources">

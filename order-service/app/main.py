@@ -46,7 +46,7 @@ def create_app() -> FastAPI:
             engine.dispose()
 
     app = FastAPI(
-        title="Friend on Campus Order Service",
+        title="CampusRun Order Service",
         version="1.0.0",
         lifespan=lifespan,
     )

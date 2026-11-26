@@ -46,7 +46,7 @@ def create_app(settings=None, *, store=None, embedder=None, answerer=None):
             if engine is not None:
                 engine.dispose()
 
-    app = FastAPI(title="Friend on Campus FAQ Support", lifespan=lifespan)
+    app = FastAPI(title="CampusRun FAQ Support", lifespan=lifespan)
 
     @app.middleware("http")
     async def request_context(request: Request, call_next):

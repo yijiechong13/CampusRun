@@ -1,6 +1,6 @@
 # FAQ Service
 
-Answers general questions about using FoC from the Markdown files in `docs/`,
+Answers general questions about using CampusRun from the Markdown files in `docs/`,
 through the frontend Help button, before or after login. It has its own
 PostgreSQL database with pgvector and cannot read other services' data, look up
 personal orders or balances, or change accounts. Setup is in the

@@ -19,8 +19,8 @@ export default function Navbar({ role, setRole, roleError, switchingRole, active
   return (
     <header className="header">
       <div className="header-container">
-        <button type="button" className="brand" onClick={() => navigate(role === "REQUESTER" ? "suppliers" : "courier-browse")} aria-label="Friend on Campus home">
-          <span className="brand-mark">FoC<span /></span><span className="brand-name">Friend on Campus</span>
+        <button type="button" className="brand" onClick={() => navigate(role === "REQUESTER" ? "suppliers" : "courier-browse")} aria-label="CampusRun home">
+          <span className="brand-mark">CR<span /></span><span className="brand-name">CampusRun</span>
         </button>
         <div className="role-switcher" aria-label="Working mode">
           {["REQUESTER", "COURIER"].map((mode) => <button key={mode} type="button" className={"role-btn " + (role === mode ? "active" : "")} aria-pressed={role === mode} disabled={switchingRole} onClick={() => setRole(mode)}>{mode === "REQUESTER" ? "Requester Mode" : "Courier Mode"}</button>)}

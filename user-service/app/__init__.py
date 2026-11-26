@@ -1,2 +1,2 @@
-"""Friend on Campus user service."""
+"""CampusRun user service."""
 
