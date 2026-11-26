@@ -16,7 +16,7 @@ class Embedder:
         )
         self._lock = Lock()
         # Warm ONNX up before the API becomes ready, including on a cached model.
-        self.query("How do I use Friend on Campus?")
+        self.query("How do I use CampusRun?")
 
     @staticmethod
     def _checked(vector):

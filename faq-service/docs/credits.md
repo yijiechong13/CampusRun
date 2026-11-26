@@ -2,9 +2,9 @@
 
 ## What are credits?
 
-Credits are FoC's reward currency. Requesters offer credits as a reward for an
+Credits are CampusRun's reward currency. Requesters offer credits as a reward for an
 errand, and couriers earn them by completing errands. Credits only exist inside
-FoC: they cannot be bought, withdrawn or exchanged for money, and they are not
+CampusRun: they cannot be bought, withdrawn or exchanged for money, and they are not
 used to pay the store for your items.
 
 ## How many credits do I start with?
@@ -16,7 +16,7 @@ after you register.
 
 Your starting credits are added in the background a moment after registration,
 so they can take a few seconds to appear. If Credit Service is temporarily
-unavailable, FoC keeps retrying and the credits appear once it is back. You will
+unavailable, CampusRun keeps retrying and the credits appear once it is back. You will
 only ever receive your starting credits once.
 
 ## How do I check my credit balance?
@@ -74,4 +74,4 @@ never go below zero, and the same credits cannot be spent twice.
 No. Credits can only be earned by completing errands or received as your
 starting allocation. You cannot buy them, send them to another student directly,
 or exchange them for money. Credits are never refunded as cash: when a request
-is cancelled or expires, its credit returns to your FoC balance.
+is cancelled or expires, its credit returns to your CampusRun balance.

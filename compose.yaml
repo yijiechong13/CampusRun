@@ -86,7 +86,7 @@ services:
 
   user-service:
     build: ./user-service
-    image: foc/user-service
+    image: campusrun/user-service
     restart: unless-stopped
     networks:
       - edge
@@ -120,7 +120,7 @@ services:
 
   supplier-service:
     build: ./supplier-service
-    image: foc/supplier-service
+    image: campusrun/supplier-service
     restart: unless-stopped
     networks:
       - edge
@@ -149,7 +149,7 @@ services:
 
   credit-service:
     build: ./credit-service
-    image: foc/credit-service
+    image: campusrun/credit-service
     networks:
       - edge
       - services
@@ -177,7 +177,7 @@ services:
 
   order-service:
     build: ./order-service
-    image: foc/order-service
+    image: campusrun/order-service
     networks:
       - edge
       - services
@@ -210,7 +210,7 @@ services:
 
   order-worker:
     # Runs the image built by order-service with a different command.
-    image: foc/order-service
+    image: campusrun/order-service
     pull_policy: never
     networks:
       - services
@@ -236,7 +236,7 @@ services:
 
   user-credit-worker:
     # Runs the image built by user-service with a different command.
-    image: foc/user-service
+    image: campusrun/user-service
     pull_policy: never
     networks:
       - services
@@ -258,7 +258,7 @@ services:
 
   faq-service:
     build: ./faq-service
-    image: foc/faq-service
+    image: campusrun/faq-service
     restart: unless-stopped
     init: true
     networks:
@@ -286,7 +286,7 @@ services:
 
   frontend:
     build: ./frontend
-    image: foc/frontend
+    image: campusrun/frontend
     restart: unless-stopped
     networks:
       - edge

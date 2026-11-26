@@ -1,10 +1,10 @@
-# Friend on Campus (FoC)
+# CampusRun
 
 **A campus errand platform for NUS students.** Request a pickup from a campus supplier, deliver an errand for another student, and earn credits.
 
-CS3219 Software Design and Architecture · AY2026/27 Semester 1 · Group 16
+> Originally built as a team project for **CS3219 Software Design and Architecture** (AY2026/27 Semester 1, Group 16). Now developed independently by Chong Yi Jie — see [Origins](#origins). Not affiliated with or endorsed by NUS.
 
-[Getting started](#getting-started) · [Architecture](#architecture) · [API documentation](#api-documentation) · [Team contributions](#team-contributions)
+[Getting started](#getting-started) · [Architecture](#architecture) · [API documentation](#api-documentation) · [Origins](#origins)
 
 > **Local deployment:** run the app with Docker Compose and open <http://localhost:5173>. FAQ answers additionally require an Anthropic API key; the core application runs without one.
 
@@ -17,10 +17,10 @@ CS3219 Software Design and Architecture · AY2026/27 Semester 1 · Group 16
 | Errands        | Create requests, accept an errand, record pickup and delivery, and confirm receipt. Cancel unassigned open requests; unaccepted requests expire at their deadline. |
 | Credits        | Receive 20 starting credits, track available and reserved balances, and inspect credit history. The frontend offers a one-credit reward per errand.                |
 | Administration | Manage accounts and suppliers, inspect audit logs and orders, and retry failed order-credit jobs.                                                                  |
-| FAQ support    | Ask general FoC questions before or after login, inspect the supporting FAQ entries, and open suggested help questions from an order.                              |
+| FAQ support    | Ask general CampusRun questions before or after login, inspect the supporting FAQ entries, and open suggested help questions from an order.                              |
 | Responsive UI  | Use requester and courier workflows across desktop and mobile screen sizes.                                                                                        |
 
-Credits circulate only within FoC: they cannot be bought, withdrawn, exchanged for money, or sent directly to another student. They reward the errand service; payment for items from the supplier is outside the platform.
+Credits circulate only within CampusRun: they cannot be bought, withdrawn, exchanged for money, or sent directly to another student. They reward the errand service; payment for items from the supplier is outside the platform.
 
 ## Getting started
 
@@ -31,8 +31,8 @@ Credits circulate only within FoC: they cannot be bought, withdrawn, exchanged f
 1. Clone the repository and enter its directory:
 
    ```bash
-   git clone https://github.com/AY2627S1-CS3219-P16b/FoC-Template.git
-   cd FoC-Template
+   git clone https://github.com/yijiechong13/CampusRun.git
+   cd CampusRun
    ```
 
 2. Complete the [first-time setup guide](startup.md#first-time-setup-once-per-machine). It covers generating `.env` credentials and JWT keys, starting the containers, seeding suppliers, and creating the first admin.
@@ -61,9 +61,9 @@ See [startup.md](startup.md) for logs, upgrades, admin bootstrap, and the option
 
 ## Architecture
 
-FoC contains **five FastAPI services**, **five PostgreSQL databases**, **two background workers**, and a **React frontend**. Each service owns its database; services exchange data through HTTP APIs rather than reading one another's tables.
+CampusRun contains **five FastAPI services**, **five PostgreSQL databases**, **two background workers**, and a **React frontend**. Each service owns its database; services exchange data through HTTP APIs rather than reading one another's tables.
 
-![FoC system architecture: the React frontend calls five FastAPI services, each with its own PostgreSQL database; Order Service calls Supplier and User Services synchronously; two workers poll outbox tables and apply credit changes in Credit Service asynchronously; FAQ Service calls the Anthropic Claude API](docs/architecture.png)
+![CampusRun system architecture: the React frontend calls five FastAPI services, each with its own PostgreSQL database; Order Service calls Supplier and User Services synchronously; two workers poll outbox tables and apply credit changes in Credit Service asynchronously; FAQ Service calls the Anthropic Claude API](docs/architecture.png)
 
 Solid arrows are synchronous HTTP requests, where the caller waits for the reply. Dashed arrows are asynchronous: a job is saved in an outbox table and delivered by a worker. The diagram summarises application flows; [compose.yaml](compose.yaml) defines the container networks and mounts.
 
@@ -113,7 +113,11 @@ Each service guide documents its test commands and prerequisites. User tests use
 - [FAQ tests and evaluation](faq-service/README.md#tests-and-evaluation)
 - Frontend checks: run `npm test` from `frontend/`.
 
-## Team contributions
+## Origins
+
+CampusRun began as a CS3219 group project. The version submitted for the module is tagged [`v0-cs3219`](../../tree/v0-cs3219); everything after that tag is independent work by Chong Yi Jie, extending the system with the module's optional (nice-to-have) features.
+
+### Original team (CS3219)
 
 | Team member      | Main contributions                                        | Nice-to-have contributions |
 | ---------------- | --------------------------------------------------------- | -------------------------- |

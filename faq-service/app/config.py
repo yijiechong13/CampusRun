@@ -30,7 +30,7 @@ class Settings:
         settings = cls(
             database_url=os.getenv("DATABASE_URL", ""),
             docs_dir=Path(os.getenv("FAQ_DOCS_DIR", str(Path(__file__).resolve().parents[1] / "docs"))),
-            model_cache=Path(os.getenv("FAQ_MODEL_CACHE", "/tmp/foc-faq-models")),
+            model_cache=Path(os.getenv("FAQ_MODEL_CACHE", "/tmp/campusrun-faq-models")),
             local_files_only=os.getenv("FAQ_MODEL_LOCAL_ONLY", "false").lower() == "true",
             embedding_threads=int(os.getenv("FAQ_EMBEDDING_THREADS", "2")),
             anthropic_api_key=os.getenv("ANTHROPIC_API_KEY", "").strip(),

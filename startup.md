@@ -1,4 +1,4 @@
-# Start Friend on Campus locally
+# Start CampusRun locally
 
 This guide covers the User, Supplier, Credit, Order and FAQ services, and React frontend.
 Run commands from the repository root unless a step says otherwise.

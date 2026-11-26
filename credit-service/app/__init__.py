@@ -1,2 +1,2 @@
-"""Friend on Campus Credit service."""
+"""CampusRun Credit service."""
 

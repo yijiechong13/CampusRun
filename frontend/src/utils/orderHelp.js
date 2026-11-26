@@ -70,7 +70,7 @@ export function orderHelpContext(order, role) {
   };
 }
 
-export const ORDER_HELP_EVENT = "foc:order-help";
+export const ORDER_HELP_EVENT = "campusrun:order-help";
 
 const FINISHED = ["COMPLETED", "CANCELLED", "EXPIRED", "REJECTED"];
 

@@ -25,7 +25,7 @@ def check_hours(opening: time, closing: time) -> None:
     """Refuse a range that would never be open.
 
     Equal times read as "closes the moment it opens". Admins who mean "never
-    closes" usually type 00:00 to 00:00, so the message names the spelling FoC
+    closes" usually type 00:00 to 00:00, so the message names the spelling CampusRun
     stores for that.
     """
     if opening == closing:
